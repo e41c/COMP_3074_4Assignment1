@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Assignment1</string>
-
     <string name="about_full_name">Eric Grigor</string>
     <string name="about_student_id">100668121</string>
     <string name="calculator">Calculator</string>
-    <string name="about">About</string>
+    <string name="about">About Page</string>
+
+
 
 </resources>

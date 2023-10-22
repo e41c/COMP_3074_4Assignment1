@@ -13,16 +13,18 @@
         android:id="@+id/editHoursWorked"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Hours Worked"/>
+        android:hint="Hours Worked"
+        android:inputType="numberDecimal"/>
 
     <EditText
         android:id="@+id/editHourlyRate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Hourly Rate"/>
+        android:hint="Hourly Rate"
+        android:inputType="numberDecimal"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate"
         android:onClick="calculatePay"/>
@@ -30,6 +32,16 @@
     <TextView
         android:id="@+id/textPay"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Pay: $0.00"
+        android:paddingTop="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:onClick="showAboutPage"/>
+
 
 </LinearLayout>
+

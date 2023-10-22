@@ -1,7 +1,6 @@
 package ca.gbc.assignment1;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -58,36 +57,26 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_about:
-                // Handle navigation to the "About" section (start AboutActivity)
-                Intent aboutIntent = new Intent(this, AboutActivity.class);
-                aboutIntent.putExtra("full_name", "Your Full Name");
-                aboutIntent.putExtra("student_id", "Your Student ID");
-                startActivity(aboutIntent);
-                return true;
+        int itemId = item.getItemId();
 
-            case R.id.menu_calculator:
-                // Handle calculations, you can open a dialog or perform calculations here
-                // Example: call a method to calculate pay
-                calculatePay();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+        if (itemId == R.id.menu_about) {
+            Intent aboutIntent = new Intent(this, AboutActivity.class);
+            startActivity(aboutIntent);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
-
-    // Method to perform calculations
-    private void calculatePay() {
-        // Add your calculation logic here
+    public void showAboutPage(View view) {
+        Intent aboutIntent = new Intent(this, AboutActivity.class);
+        startActivity(aboutIntent);
     }
 
 

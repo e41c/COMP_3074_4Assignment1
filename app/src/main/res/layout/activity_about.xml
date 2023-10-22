@@ -11,17 +11,15 @@
 
     <TextView
         android:id="@+id/textFullName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Full Name: Eric Grigor"/>
+        android:paddingTop="16dp"/>
 
     <TextView
-        android:id="@+id/textStudentID"
-        android:layout_width="wrap_content"
+        android:id="@+id/textStudentId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Student ID: 100668121"/>
-
-
+        android:paddingTop="16dp"/>
 
 
 </LinearLayout>
