@@ -4,7 +4,8 @@
     <string name="about_student_id">100668121</string>
     <string name="calculator">Calculator</string>
     <string name="about">About Page</string>
-
-
-
+    <string name="hours_worked">Hours Worked</string>
+    <string name="hourly_rate">Hourly Rate</string>
+    <string name="calculate">Calculate</string>
+    <string name="pay_0_00">Pay: $0.00</string>
 </resources>
